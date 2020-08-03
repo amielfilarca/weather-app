@@ -12,6 +12,30 @@
   </head>
 
   <body>
+    <div class="modal">
+      <div class="modal-content">
+        <div>
+          <input autocomplete="off" spellcheck="false" type="text" id="city" />
+          <label for="city">City Name (Required)</label>
+        </div>
+        <div>
+          <input autocomplete="off" spellcheck="false" type="text" id="state" />
+          <label for="state">State Code (Optional)</label>
+        </div>
+        <div>
+          <input
+            autocomplete="off"
+            spellcheck="false"
+            type="text"
+            id="country"
+          />
+          <label for="country">Country Code (Optional)</label>
+        </div>
+        <div>
+          <button class="save-location">Save</button>
+        </div>
+      </div>
+    </div>
     <main>
       <section class="app-top-row">
         <section class="left-column">
@@ -21,10 +45,10 @@
           <div class="weather-condition"></div>
           <div class="city"></div>
           <div class="temperature"></div>
-          <div class="location">
+          <a href="#" class="location">
             <i class="gg-pin"></i>
             <div class="change-location">Change location</div>
-          </div>
+          </a>
         </section>
         <section class="right-column">
           <dl class="humidity">
